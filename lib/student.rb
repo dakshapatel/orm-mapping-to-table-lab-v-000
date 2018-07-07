@@ -8,7 +8,8 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id
 
-  def attributes(name, grade, id= nil)
+  def attributes(name, grade, id)
+    @id = nil
     @name = name
     @grade = grade
     binding.pry
