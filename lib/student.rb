@@ -9,7 +9,6 @@ class Student
   attr_reader :id
 
   def attributes(name, grade)
-    self.new
     @name = name
     @grade = grade
     binding.pry
