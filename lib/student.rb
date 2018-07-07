@@ -8,11 +8,11 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id
 
-  def attributes(name, grade, id)
+  def initialize(name, grade, id)
     @id = nil
     @name = name
     @grade = grade
-    binding.pry
+    #binding.pry
   end
 
   def self.create_table
